@@ -18,10 +18,9 @@
         
         $Name = $_REQUEST['Name'];
         $Price = $_REQUEST['Price'];
-        $CatID = $_REQUEST['CatID'];
         
         
-        $sqlquery = "INSERT INTO products (PName, PPrice, Cat ID) VALUES ('$Name','$Price' ,'$CatID')";
+        $sqlquery = "INSERT INTO products (PName, PPrice) VALUES ('$Name','$Price')";
         
         if ($conn->query($sqlquery) == TRUE) {
             echo "Product inserted successfully";
